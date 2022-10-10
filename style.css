@@ -1,0 +1,63 @@
+h1 {
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 15px;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav ul li a {
+    color: white;
+}
+
+nav ul li :hover {
+    color: red;
+}
+
+.project {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 90%;
+    background-color: rgb(177, 177, 177);
+    border-radius: 25px;
+}
+
+.project h2 {
+    text-align: center;
+    color: white;
+    background-color: red;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.project a :hover {
+    background-color: maroon;
+}
+
+header {
+    background-color: #212121;
+    margin: 0;
+}
