@@ -8,7 +8,7 @@ h1 {
 
 body {
     margin: 0;
-    background-color: rgb(68, 68, 68);
+    background-color: rgb(201, 2, 36);
 }
 
 nav ul {
@@ -36,7 +36,7 @@ nav ul li :hover {
     margin-right: auto;
     padding: 20px;
     width: 90%;
-    background-color: rgb(177, 177, 177);
+    background-color: rgba(255, 255, 255, 0.423);
     border-radius: 25px;
 }
 
@@ -50,7 +50,11 @@ nav ul li :hover {
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
+}
 
+.project h3 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Sans serif';
 }
 
 .project a :hover {
@@ -62,46 +66,42 @@ header {
     margin: 0;
 }
 
+header a {
+    background-image: url("./images/menu.png");
+}
+
+main {
+    display: grid;
+    grid-template-columns:repeat(2, 30%);
+    justify-content:space-evenly;
+}
+
+main section {
+    margin: 20px;
+}
+
 header button {
     display: none;
 }
 
-footer {
-    background-color: #212121;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-footer h3 {
-    color: white;
-}
-
-footer p {
-    color: white;
-}
-
-footer div a img {
-    width: 30px;
-    color: white;
-}
-
 @media only screen and (max-width: 480px) {
 
-    header {
-        display: grid;
-        grid-template-rows: 1fr;
+    main {
+        grid-template-columns: 1fr;
     }
 
-    h1 {
-        font-size: 150%;
-    }
-
-    nav{
-        display:none;
-    }
-
-    header button {
+    header a {
         display: block;
-        align-items: flex-start;
+        width: 50px;
+        height: 50px;
     }
+
+    nav {
+        display: none;
+    }
+
+    .project {
+        width: 80%;
+    }
+
 }
