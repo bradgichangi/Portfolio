@@ -110,16 +110,30 @@ main {
 }
 
 #resume-main {
-    background-color: rgb(46, 46, 46);
+    background-color: rgb(83, 83, 83);
     display: block;
     margin: 5% 10%;
     padding: 20px;
     color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+#resume-main h1 {
+    color: rgb(226, 225, 225);
+    font-size: 3em;
+}
+
+#resume-main h2, h3, h4{
+    color: rgb(101, 0, 0);
+}
+
+#resume-main p {
+    font-family: 'Lato', sans-serif;
 }
 
 #resume-main > header {
     width: 100%;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(109, 109, 109);
 }
 
 #resume-body {
@@ -130,20 +144,44 @@ main {
     list-style-type: none;
 }
 
+#resume-body-left header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#resume-body-left header span {
+    font-size: 12px;
+    color:#212121
+} 
+
 #resume-body h4 {
+    margin: 0;
     text-align: center;
+}
+
+#resume-body-left h4 span {
+    font-family: 'Lato', sans-serif;
+    /* font-style: italic; */
+    font-size: small;
+}
+
+#resume-projects p{
+    padding-left: 40px;
 }
 
 #resume-body-right {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
+    /* align-items: center; */
     padding: 10px;
+    margin-left: 4%;
 }
 
 #resume-body-right ul li {
     list-style-type: square;
+    font-family: 'Lato', sans-serif;
 }
 
 #resume-body-right img {
@@ -153,7 +191,15 @@ main {
 #resume-body-left {
     width: 70%;
     padding: 20px;
-    border-right: 1px solid white;
+    border-right: 1px solid rgb(109, 109, 109);
+}
+
+#resume-info {
+    text-align: center;
+}
+
+#resume-info a {
+    margin: 0 15px;
 }
 
 #bio {
